@@ -1,0 +1,15 @@
+nf
+==
+
+A command-line utility for renaming files to Unix-friendly file names.
+
+Installing
+----------
+
+By default `nf` is installed in the user's home directory.  To install
+it in a different location, edit the `Makefile`.
+
+Requirements
+------------
+
+GNU Guile.
