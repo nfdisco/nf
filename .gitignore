@@ -1,1 +1,10 @@
-src/*.go
+autom4te.cache/
+build-aux
+**/Makefile.in
+**/Makefile
+config.*
+configure
+aclocal.m4
+
+**/*.go
+

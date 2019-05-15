@@ -1,15 +1,20 @@
 nf
 ==
 
+Description
+-----------
+
 A command-line utility for renaming files to Unix-friendly file names.
+
+It is written in GNU Guile.
 
 Installing
 ----------
 
-By default `nf` is installed in the user's home directory.  To install
-it in a different location, edit the `Makefile`.
+Use
 
-Requirements
-------------
+    ./configure
+    make && make install
 
-GNU Guile.
+to install the program.
+
