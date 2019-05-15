@@ -1,4 +1,4 @@
-(define-module (slug slug))
+(define-module (nf slug))
 
 (export string-slug slug-filter)
 
