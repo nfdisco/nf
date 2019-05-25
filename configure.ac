@@ -1,9 +1,18 @@
-AC_PREREQ([2.69])
-AC_INIT([nf], [1.2], [nr9@posteo.de])
-AC_CONFIG_AUX_DIR(build-aux)
-AM_INIT_AUTOMAKE([foreign])
+AC_INIT([normalize-rename], [1.9])
+AC_CONFIG_AUX_DIR([build-aux])
+AC_CONFIG_MACRO_DIR([m4])
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+
+GUILE_PKG
+GUILE_PROGS
 GUILE_SITE_DIR
+if test "x$GUILD" = "x"; then
+   AC_MSG_ERROR(['guild' binary not found.])
+fi
+
 AC_CONFIG_FILES([Makefile
-                 modules/Makefile
+                 module/Makefile
                  src/Makefile])
+AC_CONFIG_FILES([pre-inst-env], [chmod +x pre-inst-env])
+
 AC_OUTPUT

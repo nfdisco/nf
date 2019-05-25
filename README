@@ -1,10 +1,10 @@
-nf
-==
+nren
+====
 
 Description
 -----------
 
-A command-line utility for renaming files to Unix-friendly file names.
+A command-line utility for renaming files to normalized filenames.
 
 It is written in GNU Guile.
 

@@ -1,2 +1,2 @@
-dist_bin_SCRIPTS = nf
+dist_bin_SCRIPTS = normalize-rename
 
