@@ -1,5 +1,5 @@
-nren
-====
+normalize-rename
+================
 
 Description
 -----------
@@ -8,13 +8,35 @@ A command-line utility for renaming files to normalized filenames.
 
 It is written in GNU Guile.
 
-Installing
-----------
+Development
+-----------
 
-Use
+In order to use the project modules before they are installed, the
+pre-inst-env script can be used.  For example,
 
-    ./configure
+    ./pre-inst-env guile
+
+will start Guile with the appropriate load path, so that the modules
+in the source tree can be found and loaded.
+
+Build Process
+-------------
+
+Run the bootstrap script to generate the configure script and the rest
+of the files that are used by the build process.
+
+If the configure script is unable to find guild, you can specify the
+location of the guild executable when calling the script
+
+    ./configure GUILD=`which guild`
+
+Once the source tree is configured, run
+
     make && make install
 
-to install the program.
+to compile and install the program.
+
+To build a Debian package, which can be installed with dpkg, use
+
+    dpkg-buildpackage -us -uc -b
 
