@@ -41,6 +41,7 @@ Options:
 
 (define (%main args)
   "Process command-line arguments."
+  (setlocale LC_ALL "")
   (let* ((options (getopt-long args option-spec))
          (arg-n (option-ref options 'extenstions #f))
          (k (if arg-n (integer-arg arg-n) 0))

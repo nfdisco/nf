@@ -1,5 +1,9 @@
-normalize-rename (1.9-0) UNRELEASED; urgency=medium
+normalize-rename (1.10-0) UNRELEASED; urgency=medium
 
+  [ nfdisco ]
   * Initial release.
 
- -- nfdisco <nr9@posteo.de>  Sat, 25 May 2019 10:59:14 +0200
+  [ nfdisco ]
+  * New upstream version.
+
+ -- nfdisco <nr9@posteo.de>  Thu, 25 Jul 2019 18:21:36 +0200
