@@ -2,10 +2,10 @@ Source: normalize-rename
 Maintainer: nfdisco <nr9@posteo.de>
 Section: misc
 Priority: optional
-Build-Depends: debhelper (>= 10), guile-2.0-dev
+Build-Depends: debhelper (>= 10), guile-2.2-dev
 
 Package: normalize-rename
 Architecture: all
-Depends: guile-2.0
+Depends: guile-2.2
 Description: Rename files to normalized filenames
  A command-line utility for renaming files to normalized filenames.
