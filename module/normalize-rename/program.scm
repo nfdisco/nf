@@ -3,5 +3,5 @@
 
 (define program-name (make-parameter "normalize-rename"))
 
-(define normalize-rename-version "1.9")
+(define normalize-rename-version "1.10")
 
